@@ -1,5 +1,6 @@
 import bisect
 
+
 class MapOperation(object):
     def __init__(self, retval):
         self.retval = retval
@@ -55,6 +56,7 @@ class Put(MapOperation):
 
     def is_const(self):
         return False
+
 
 class Scan(MapOperation):
     def __init__(self, key_start, key_end, retval):
